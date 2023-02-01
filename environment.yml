@@ -3,3 +3,10 @@ channels:
 
 packages:
 - jupyter-panel-proxy
+
+commands:
+  dashboard:
+    unix: panel serve main.ipynb
+    supports_http_options: true
+  notebook:
+    notebook: main.ipynb
